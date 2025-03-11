@@ -15,12 +15,6 @@ pipeline {
             }
         }
 
-        stage('Set Registry') {
-            steps {
-                sh '"npm config set registry http://portal.pje.redejt/nexus/repository/npm-group/:_auth=ZGlvZ28uY2F2YWxjYW50aUB0c3QuanVzLmJyOkxlbW15U3RlcjY2QA=="'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 script {
